@@ -16,7 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CityList.Core\CityList.Core.csproj" />
-    <ProjectReference Include="..\WebApplication1\CityList.Web.csproj" />
+    <ProjectReference Include="..\CityList.Web\CityList.Web.csproj" />
   </ItemGroup>
 
 </Project>

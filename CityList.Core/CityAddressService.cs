@@ -8,6 +8,9 @@ using System.Globalization;
 
 namespace CityList.Core
 {
+    /// <summary>
+    /// Service for retreiving addresses grouped by city.
+    /// </summary>
     public class CityAddressService : ICityAddressService
     {
         private readonly IAddressRepository repository;
@@ -27,6 +30,8 @@ namespace CityList.Core
 
             var addresses = await repository.GetAddresses();
 
+            // Group the addresses by the City property, adjusted to title case to avoid 
+            // cities with different capitalisation being grouped separately
             var group = addresses
                 .GroupBy(g => txtInfo.ToTitleCase(g.City))
                 .Select(g => new City() { Name = g.Key, Addresses = g.ToList() });

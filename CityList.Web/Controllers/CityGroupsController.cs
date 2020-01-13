@@ -7,9 +7,9 @@ using CityList.Core;
 using CityList.Core.Types;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using WebApplication1.Models;
+using CityList.Web.Models;
 
-namespace WebApplication1.Controllers
+namespace CityList.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -49,6 +49,10 @@ namespace CityList.Tests
             var result = task.Result.ToList();
 
             Assert.AreEqual(2, result.Count);
+            Assert.AreEqual("London", result[0].Name);
+            Assert.AreEqual(2, result[0].Addresses.Count());
+            Assert.AreEqual("New York", result[1].Name);
+            Assert.AreEqual(1, result[1].Addresses.Count());
         }
 
         [TestMethod]

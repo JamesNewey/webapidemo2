@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CityList.Core;
 
-namespace WebApplication1
+namespace CityList.Web
 {
     public class Startup
     {
